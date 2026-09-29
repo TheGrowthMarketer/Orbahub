@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Work — Orrba Hub</title>
+<meta name="description" content="Selected partnership work from Orrba Hub, including Limitless Without Borders, Gamr and Centre for Values in Leadership.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%23001941'/%3E%3Ctext x='32' y='43' font-family='Arial,sans-serif' font-size='28' font-weight='700' fill='%2329D3C7' text-anchor='middle'%3EO%3C/text%3E%3C/svg%3E">
+<meta name="theme-color" content="#001941">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Orrba Hub">
+<meta property="og:title" content="Our Work — Orrba Hub">
+<meta property="og:description" content="Selected partnership work from Orrba Hub, including Limitless Without Borders, Gamr and Centre for Values in Leadership.">
+<meta name="twitter:card" content="summary">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#001941;
+  --navy-deep:#0C1D3B;
+  --teal:#29D3C7;
+  --teal-dark:#0B5F5A;
+  --white:#FFFFFF;
+  --charcoal:#26313D;
+  --mist:#F4F6F9;
+  --line:#E1E7EF;
+  --line-dark:rgba(255,255,255,0.14);
+  --muted:#5C6B7A;
+  --maxw:1180px;
+  --section-pad:128px;
+  --section-pad-mobile:72px;
+}
+*{box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{
+  margin:0;
+  font-family:'Inter',sans-serif;
+  color:var(--charcoal);
+  background:var(--white);
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+  font-size:16px;
+}
+h1,h2,h3,h4{
+  font-family:'Sora',sans-serif;
+  color:var(--navy);
+  margin:0;
+  line-height:1.14;
+  letter-spacing:-0.015em;
+}
+p{margin:0;}
+a{color:inherit; text-decoration:none;}
+img{max-width:100%; display:block;}
+ul{margin:0; padding:0; list-style:none;}
+.wrap{max-width:var(--maxw); margin:0 auto; padding:0 40px;}
+section{padding:var(--section-pad) 0;}
+
+/* ---------- SHARED TYPE ---------- */
+.label{
+  font-family:'Inter',sans-serif;
+  font-weight:600;
+  font-size:12.5px;
+  letter-spacing:0.12em;
+  text-transform:uppercase;
+  color:var(--navy);
+}
+.label.on-dark{color:var(--teal);}
+.label.on-light{color:var(--teal-dark);}
+
+.idx{
+  font-family:'Sora',sans-serif;
+  font-weight:700;
+  font-size:14px;
+  letter-spacing:0.02em;
+  color:var(--teal-dark);
+  display:block;
+  margin-bottom:18px;
+}
+.idx.on-dark{color:var(--teal);}
+
+/* ---------- BUTTONS ---------- */
+.btn{
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  font-family:'Inter',sans-serif;
+  font-weight:600;
+  font-size:15px;
+  padding:15px 28px;
+  border-radius:2px;
+  border:1.5px solid transparent;
+  cursor:pointer;
+  transition:background .18s ease, border-color .18s ease, color .18s ease, transform .12s ease;
+  white-space:nowrap;
+}
+.btn:hover{transform:translateY(-1px);}
+.btn-primary{background:var(--teal); color:var(--navy-deep); border-color:var(--teal);}
+.btn-primary:hover{background:#20b8ad; border-color:#20b8ad;}
+.btn-outline-dark{border-color:rgba(255,255,255,0.38); color:var(--white);}
+.btn-outline-dark:hover{border-color:var(--white); background:rgba(255,255,255,0.06);}
+.btn-outline-navy{border-color:var(--navy); color:var(--navy);}
+.btn-outline-navy:hover{background:var(--navy); color:var(--white);}
+
+/* ---------- NAV ---------- */
+header{
+  position:sticky; top:0; z-index:50;
+  background:rgba(255,255,255,0.97);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);
+}
+.nav{display:flex; align-items:center; justify-content:space-between; padding:22px 40px; max-width:var(--maxw); margin:0 auto;}
+.nav-logo{font-family:'Sora',sans-serif; font-weight:700; font-size:19px; color:var(--navy); display:flex; flex-direction:column; line-height:1;}
+.nav-logo small{font-family:'Inter',sans-serif; font-weight:600; font-size:9px; letter-spacing:0.15em; color:var(--muted); margin-top:5px;}
+.nav-logo small em{color:var(--teal); font-style:normal;}
+.nav-links{display:flex; gap:38px; align-items:center;}
+.nav-links a{font-size:14px; font-weight:500; color:var(--navy); opacity:0.75; transition:opacity .15s ease; padding-bottom:5px; border-bottom:2px solid transparent;}
+.nav-links a:hover{opacity:1;}
+.nav-links a.active{opacity:1; border-bottom-color:var(--teal); font-weight:600;}
+.nav-cta{display:flex; align-items:center; gap:22px;}
+.nav-toggle{display:none; background:none; border:none; cursor:pointer; padding:6px;}
+.nav-toggle span{display:block; width:22px; height:2px; background:var(--navy); margin:5px 0;}
+
+/* ---------- HERO (home) ---------- */
+.hero{
+  background:var(--navy-deep);
+  background-image:
+    radial-gradient(circle at 88% 8%, rgba(41,211,199,0.12), transparent 40%),
+    radial-gradient(circle at -5% 95%, rgba(41,211,199,0.06), transparent 40%);
+  color:var(--white);
+  padding:120px 0 0;
+  overflow:hidden;
+}
+.hero-inner{display:grid; grid-template-columns:1.05fr 0.95fr; gap:60px; align-items:center; padding-bottom:80px;}
+.hero-eyebrow{color:var(--teal); font-weight:600; font-size:13px; letter-spacing:0.14em; text-transform:uppercase; margin-bottom:26px; opacity:0; animation:fadeUp .7s ease forwards;}
+.hero h1{color:var(--white); font-size:clamp(2.4rem, 1.6rem + 2.6vw, 3.6rem); font-weight:700; letter-spacing:-0.02em; margin-bottom:24px; opacity:0; animation:fadeUp .7s ease .1s forwards;}
+.hero p.sub{font-size:18px; color:rgba(255,255,255,0.68); max-width:460px; margin-bottom:38px; opacity:0; animation:fadeUp .7s ease .2s forwards;}
+.hero-actions{display:flex; gap:16px; flex-wrap:wrap; margin-bottom:52px; opacity:0; animation:fadeUp .7s ease .3s forwards;}
+.hero-tagline{font-family:'Sora',sans-serif; font-weight:600; font-size:17px; color:var(--white); opacity:0; animation:fadeUp .7s ease .4s forwards;}
+.hero-tagline .dot{color:var(--teal); margin:0 3px;}
+@keyframes fadeUp{from{opacity:0; transform:translateY(16px);} to{opacity:1; transform:translateY(0);}}
+.hero-graphic{opacity:0; animation:fadeUp .9s ease .25s forwards;}
+.hero-graphic svg{width:100%; height:auto;}
+
+.hero-facts{
+  border-top:1px solid var(--line-dark);
+  display:grid; grid-template-columns:repeat(3,1fr);
+}
+.hero-facts div{padding:26px 0; border-right:1px solid var(--line-dark);}
+.hero-facts div:last-child{border-right:none;}
+.hero-facts .k{font-size:11.5px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:rgba(255,255,255,0.45); margin-bottom:8px;}
+.hero-facts .v{font-family:'Sora',sans-serif; font-weight:600; font-size:16px; color:var(--white);}
+
+/* ---------- INTERIOR PAGE HERO ---------- */
+.page-hero{background:var(--navy-deep); color:var(--white); padding:118px 0 68px;
+  background-image:radial-gradient(circle at 88% 15%, rgba(41,211,199,0.10), transparent 42%);}
+.page-hero .label{color:var(--teal); display:block; margin-bottom:18px;}
+.page-hero h1{color:var(--white); font-size:clamp(2rem, 1.5rem + 2vw, 2.85rem); font-weight:700; letter-spacing:-0.02em; max-width:680px;}
+.page-hero p{color:rgba(255,255,255,0.68); font-size:16.5px; max-width:560px; margin-top:18px;}
+
+/* ---------- LOGO STRIP ---------- */
+.logos-strip{padding:38px 0; border-bottom:1px solid var(--line); background:var(--white);}
+.logos-strip .wrap{display:flex; align-items:center; gap:36px; flex-wrap:wrap; justify-content:space-between;}
+.logos-strip .tag{font-size:12.5px; font-weight:600; letter-spacing:0.1em; text-transform:uppercase; color:var(--muted); white-space:nowrap;}
+.logo-chips{display:flex; gap:12px; flex-wrap:wrap;}
+.logo-chip{
+  font-family:'Sora',sans-serif; font-weight:600; font-size:14px; color:var(--navy);
+  padding:9px 16px; border:1px solid var(--line); border-radius:2px; background:var(--white);
+}
+
+/* ---------- SECTION HEADER PATTERN ---------- */
+.sec-head{max-width:600px; margin-bottom:64px;}
+.sec-head .label{margin-bottom:16px; display:block;}
+.sec-head h2{font-size:clamp(1.7rem, 1.3rem + 1.4vw, 2.35rem); font-weight:700; margin-bottom:18px;}
+.sec-head p{color:var(--muted); font-size:16px;}
+.sec-head.on-dark h2{color:var(--white);}
+.sec-head.on-dark p{color:rgba(255,255,255,0.62);}
+.sec-head.split{max-width:none; display:grid; grid-template-columns:1fr 1fr; gap:48px; align-items:end;}
+.sec-head.split p{max-width:420px;}
+
+/* ---------- NUMBERED GRID (Who We Help / process motif reused) ---------- */
+.numbered-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--line); border:1px solid var(--line);}
+.numbered-card{background:var(--white); padding:38px 34px; border-left:3px solid transparent; transition:border-color .18s ease, background .18s ease;}
+.numbered-card:hover{border-left-color:var(--teal); background:#FAFBFD;}
+.numbered-card h3{font-size:18.5px; font-weight:600; margin-bottom:10px;}
+.numbered-card p{font-size:14.5px; color:var(--muted);}
+
+/* ---------- SERVICES (index rows) ---------- */
+.services{background:var(--mist);}
+.service-row{
+  display:grid; grid-template-columns:60px 220px 1fr; gap:32px; align-items:start;
+  padding:36px 0; border-top:1px solid var(--line);
+}
+.service-row:last-of-type{border-bottom:1px solid var(--line);}
+.service-row .idx{margin-bottom:0; padding-top:2px;}
+.service-row.no-idx{grid-template-columns:240px 1fr;}
+.service-row h3{font-size:20px; font-weight:600;}
+.service-row .desc p{color:var(--muted); font-size:15.5px; margin-bottom:16px; max-width:620px;}
+.tag-list{display:flex; flex-wrap:wrap; gap:8px;}
+.tag-list span{
+  font-size:12.5px; font-weight:600; letter-spacing:0.02em; color:var(--teal-dark);
+  background:rgba(41,211,199,0.12); padding:7px 13px; border-radius:2px;
+}
+.note-box{
+  margin-top:8px; padding:22px 26px; background:var(--white); border-left:3px solid var(--teal);
+  font-size:14.5px; color:var(--muted); max-width:720px;
+}
+.note-box strong{color:var(--navy);}
+
+/* ---------- HOME: WHAT WE DO TEASER (editorial index, distinct from services page) ---------- */
+.do-teaser{display:grid; grid-template-columns:0.85fr 1.15fr; gap:64px;}
+.do-teaser-intro p{color:var(--muted); font-size:16px; margin-bottom:28px; max-width:400px;}
+.do-list{border-top:1px solid var(--line);}
+.do-list-row{display:flex; align-items:baseline; justify-content:space-between; gap:24px; padding:22px 0; border-bottom:1px solid var(--line);}
+.do-list-row .name{font-family:'Sora',sans-serif; font-weight:600; font-size:17px; color:var(--navy);}
+.do-list-row .name span{color:var(--teal-dark); font-size:13px; font-weight:700; margin-right:14px;}
+.do-list-row .line{font-size:14px; color:var(--muted); text-align:right; max-width:320px;}
+
+/* ---------- HOW WE WORK ---------- */
+.process{background:var(--navy-deep); color:var(--white);}
+.process-steps{display:grid; grid-template-columns:repeat(5,1fr); gap:0; border-top:1px solid var(--line-dark);}
+.process-step{padding:36px 24px 0 0; border-right:1px solid var(--line-dark);}
+.process-step:last-child{border-right:none;}
+.process-step .idx{color:var(--teal); margin-bottom:20px;}
+.process-step h3{color:var(--white); font-size:18px; margin-bottom:10px;}
+.process-step p{font-size:14px; color:rgba(255,255,255,0.6);}
+.process-tagline{margin-top:56px; font-family:'Sora',sans-serif; font-weight:600; font-size:16px; color:rgba(255,255,255,0.82);}
+.process-tagline .teal{color:var(--teal);}
+
+/* ---------- WORK TEASER (home) — distinct card grid ---------- */
+.work-teaser-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:24px;}
+.work-teaser-card{border-top:3px solid var(--teal); padding-top:24px;}
+.work-teaser-card h3{font-size:20px; margin-bottom:10px;}
+.work-teaser-card p{font-size:14.5px; color:var(--muted);}
+
+/* ---------- CASE STUDIES (full, work page) ---------- */
+.case{border-top:1px solid var(--line); padding:48px 0; display:grid; grid-template-columns:1fr 1.6fr; gap:48px;}
+.case:last-child{border-bottom:1px solid var(--line);}
+.case h3{font-size:28px; font-weight:700; margin-bottom:10px;}
+.case .role{font-size:13.5px; color:var(--muted); font-weight:500;}
+.case-tags{display:flex; flex-wrap:wrap; gap:10px; align-content:flex-start;}
+.case-tags span{
+  font-size:13.5px; font-weight:500; color:var(--navy); border:1px solid var(--line);
+  padding:9px 14px; border-radius:2px;
+}
+
+/* ---------- WHY ORRBA ---------- */
+.why{background:var(--navy);}
+.why-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:44px;}
+.why-item{border-top:2px solid var(--teal); padding-top:24px;}
+.why-item h3{color:var(--white); font-size:19px; margin-bottom:12px;}
+.why-item p{color:rgba(255,255,255,0.62); font-size:14.5px;}
+
+/* ---------- ABOUT ---------- */
+.about .wrap{display:grid; grid-template-columns:0.9fr 1.1fr; gap:72px;}
+.about-facts{display:flex; flex-direction:column; gap:24px;}
+.fact{border-top:1px solid var(--line); padding-top:16px;}
+.fact .k{font-size:12.5px; font-weight:600; letter-spacing:0.07em; text-transform:uppercase; color:var(--muted); margin-bottom:7px;}
+.fact .v{font-family:'Sora',sans-serif; font-weight:600; font-size:16.5px; color:var(--navy);}
+.about-body h2{font-size:clamp(1.6rem, 1.2rem + 1.3vw, 2.1rem); margin-bottom:24px;}
+.about-body p{color:var(--muted); font-size:16px; margin-bottom:20px; max-width:600px;}
+.about-body p:last-child{margin-bottom:0;}
+
+/* ---------- INSIGHTS ---------- */
+.insights{background:var(--mist);}
+.insights-grid{display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:var(--line); border:1px solid var(--line);}
+.insight-card{background:var(--white); padding:34px 30px;}
+.insight-card .label{margin-bottom:18px; display:block;}
+.insight-card h3{font-size:18px; margin-bottom:10px;}
+.insight-card p{font-size:14px; color:var(--muted);}
+.insights-note{margin-top:34px; font-size:14px; color:var(--muted); font-style:italic;}
+
+/* ---------- CONTACT ---------- */
+.contact .wrap{display:grid; grid-template-columns:0.85fr 1.15fr; gap:72px;}
+.contact-info h2{font-size:clamp(1.6rem, 1.2rem + 1.3vw, 2.1rem); margin-bottom:20px;}
+.contact-info > p{color:var(--muted); font-size:16px; margin-bottom:40px; max-width:420px;}
+.contact-list{display:flex; flex-direction:column; gap:22px;}
+.contact-list li{border-top:1px solid var(--line); padding-top:16px;}
+.contact-list .k{font-size:12px; font-weight:600; letter-spacing:0.08em; text-transform:uppercase; color:var(--muted); margin-bottom:6px;}
+.contact-list .v{font-family:'Sora',sans-serif; font-weight:600; font-size:16px; color:var(--navy);}
+.contact-list a.v:hover{color:var(--teal-dark);}
+
+.form-card{background:var(--mist); border:1px solid var(--line); padding:44px; border-radius:3px;}
+.form-card h3{font-size:20px; margin-bottom:28px;}
+.form-row{margin-bottom:22px;}
+.form-row label{display:block; font-size:13px; font-weight:600; color:var(--navy); margin-bottom:8px;}
+.form-row input, .form-row select, .form-row textarea{
+  width:100%; padding:13px 15px; font-family:'Inter',sans-serif; font-size:15px;
+  border:1.5px solid var(--line); border-radius:2px; background:var(--white); color:var(--charcoal);
+  transition:border-color .15s ease;
+}
+.form-row input:focus, .form-row select:focus, .form-row textarea:focus{outline:none; border-color:var(--teal);}
+.form-grid-2{display:grid; grid-template-columns:1fr 1fr; gap:22px;}
+.form-row textarea{resize:vertical; min-height:100px;}
+.form-submit-row{display:flex; align-items:center; gap:24px; margin-top:10px; flex-wrap:wrap;}
+.whatsapp-link{font-size:14.5px; font-weight:600; color:var(--navy); display:inline-flex; align-items:center; gap:6px;}
+.whatsapp-link span{border-bottom:1.5px solid var(--teal);}
+.form-success{display:none; padding:18px 20px; background:rgba(41,211,199,0.12); border-left:3px solid var(--teal); font-size:14.5px; color:var(--navy); margin-top:20px;}
+.form-success.show{display:block;}
+
+/* ---------- FINAL CTA BAND ---------- */
+.cta-band{background:var(--teal); text-align:left; padding:80px 0;}
+.cta-band .wrap{display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:28px;}
+.cta-band h2{font-size:clamp(1.5rem, 1.2rem + 1vw, 1.9rem); color:var(--navy-deep); max-width:520px;}
+.cta-band .btn-primary{background:var(--navy-deep); color:var(--white); border-color:var(--navy-deep);}
+.cta-band .btn-primary:hover{background:var(--navy); border-color:var(--navy);}
+
+/* ---------- FOOTER ---------- */
+footer{background:var(--navy-deep); color:rgba(255,255,255,0.7); padding:72px 0 36px;}
+.footer-top{display:grid; grid-template-columns:1.3fr 1fr 1fr 1fr; gap:44px; padding-bottom:48px; border-bottom:1px solid var(--line-dark);}
+.footer-logo{font-family:'Sora',sans-serif; font-weight:700; font-size:20px; color:var(--white); margin-bottom:14px;}
+.footer-logo small{display:block; font-family:'Inter',sans-serif; font-weight:600; font-size:10.5px; letter-spacing:0.14em; color:var(--teal); margin-top:7px;}
+.footer-desc{font-size:14px; max-width:280px; color:rgba(255,255,255,0.5);}
+.footer-col h4{color:var(--white); font-size:13px; font-weight:600; letter-spacing:0.05em; margin-bottom:20px;}
+.footer-col ul{display:flex; flex-direction:column; gap:12px;}
+.footer-col a{font-size:14px; color:rgba(255,255,255,0.55); transition:color .15s ease;}
+.footer-col a:hover{color:var(--teal);}
+.footer-bottom{display:flex; justify-content:space-between; align-items:center; padding-top:28px; flex-wrap:wrap; gap:14px;}
+.footer-bottom p{font-size:12.5px; color:rgba(255,255,255,0.38);}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width: 980px){
+  section{padding:var(--section-pad-mobile) 0;}
+  .hero{padding-top:88px;}
+  .hero-inner{grid-template-columns:1fr; gap:44px; padding-bottom:56px;}
+  .hero-graphic{order:-1; max-width:280px; margin:0 auto;}
+  .hero-facts{grid-template-columns:1fr; }
+  .hero-facts div{border-right:none; border-bottom:1px solid var(--line-dark); padding:18px 0;}
+  .hero-facts div:last-child{border-bottom:none;}
+  .nav{padding:18px 24px;}
+  .nav-links, .nav-cta .btn-outline-navy{display:none;}
+  .nav-toggle{display:block;}
+  .numbered-grid{grid-template-columns:repeat(2,1fr);}
+  .sec-head.split{grid-template-columns:1fr; gap:16px;}
+  .service-row, .service-row.no-idx{grid-template-columns:1fr; gap:14px;}
+  .service-row .idx{display:none;}
+  .do-teaser{grid-template-columns:1fr; gap:32px;}
+  .do-list-row{flex-direction:column; align-items:flex-start; gap:6px;}
+  .do-list-row .line{text-align:left;}
+  .process-steps{grid-template-columns:repeat(2,1fr);}
+  .process-step{border-right:none; border-bottom:1px solid var(--line-dark); padding-bottom:28px; margin-bottom:0;}
+  .work-teaser-grid{grid-template-columns:1fr; gap:32px;}
+  .case{grid-template-columns:1fr; gap:22px;}
+  .why-grid{grid-template-columns:repeat(2,1fr); gap:34px;}
+  .about .wrap, .contact .wrap{grid-template-columns:1fr; gap:44px;}
+  .insights-grid{grid-template-columns:1fr;}
+  .footer-top{grid-template-columns:1fr 1fr; gap:34px;}
+  .form-grid-2{grid-template-columns:1fr;}
+  .cta-band .wrap{flex-direction:column; align-items:flex-start;}
+}
+@media (max-width: 600px){
+  .wrap{padding:0 22px;}
+  .numbered-grid{grid-template-columns:1fr;}
+  .process-steps{grid-template-columns:1fr;}
+  .why-grid{grid-template-columns:1fr;}
+  .footer-top{grid-template-columns:1fr;}
+}
+
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="nav">
+    <a href="https://claude.ai/artifact/JA2UGntbHmq6PVw8uARigW" class="nav-logo">Orrba Hub<small>CREATE. <em>CONNECT.</em> BUILD.</small></a>
+    <div class="nav-links">
+      <a href="https://claude.ai/artifact/Ws7Uux1oEEPWQ8mQyppzMX">About</a>
+      <a href="https://claude.ai/artifact/1FmRYnzsEHaTuYbHWrJk1u">Services</a>
+      <a href="https://claude.ai/artifact/T1uARHLb6C7FvZmTHtdEGQ">Our Work</a>
+      <a href="https://claude.ai/artifact/8TwmXA7HKX1dcTz8YD33db">Insights</a>
+      <a href="https://claude.ai/artifact/B56kUHtw138U3qqbHPDW7C">Contact</a>
+    </div>
+    <div class="nav-cta">
+      <a href="https://claude.ai/artifact/B56kUHtw138U3qqbHPDW7C" class="btn btn-outline-navy">Start a Conversation</a>
+    </div>
+    <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+  </nav>
+</header>
+
+<section class="page-hero">
+  <div class="wrap">
+    <span class="label">Selected Work</span>
+    <h1>Partnerships we've helped build.</h1>
+    <p>This section will grow as Orrba Hub takes on more conveners. Here's what we've supported so far.</p>
+  </div>
+</section>
+
+<!-- ================= LOGO STRIP ================= -->
+<div class="logos-strip">
+  <div class="wrap">
+    <span class="tag">Partnerships supported for</span>
+    <div class="logo-chips">
+      <span class="logo-chip">Limitless Without Borders</span>
+      <span class="logo-chip">Gamr</span>
+      <span class="logo-chip">Women Speak Conference</span>
+      <span class="logo-chip">Centre for Values in Leadership</span>
+    </div>
+  </div>
+</div>
+
+<!-- ================= CASE STUDIES ================= -->
+<section id="work">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="label on-light">Case Studies</span>
+      <h2>What Orrba Hub supported.</h2>
+    </div>
+
+    <div class="case" style="border-top:1px solid var(--line);">
+      <div><h3>Limitless Without Borders</h3><p class="role">Event &amp; community partnerships</p></div>
+      <div class="case-tags"><span>Event Partnerships</span><span>Partnership Outreach &amp; Development</span><span>Sponsor &amp; Exhibitor Prospecting</span><span>Media &amp; Community Partnerships</span><span>Corporate Outreach</span></div>
+    </div>
+    <div class="case">
+      <div><h3>Gamr</h3><p class="role">Corporate &amp; institutional partnerships</p></div>
+      <div class="case-tags"><span>Partnership Outreach &amp; Development</span><span>Sponsor &amp; Exhibitor Prospecting</span><span>Media &amp; Community Partnerships</span><span>Corporate &amp; Institutional Partnership</span><span>Event &amp; Programme Partnerships</span></div>
+    </div>
+    <div class="case">
+      <div><h3>Centre for Values in Leadership</h3><p class="role">Programme sponsorship &amp; support</p></div>
+      <div class="case-tags"><span>Partnership Development</span><span>Sponsorship</span><span>Programme Support</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= RESULTS ================= -->
+<section class="services">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="label on-light">Results</span>
+      <h2>What we measure our work against.</h2>
+      <p>As our case study library grows, this is where we'll report the outcomes behind each partnership — not just the names attached to it.</p>
+    </div>
+    <div class="about-facts" style="flex-direction:row; gap:24px; flex-wrap:wrap;">
+      <div class="fact" style="flex:1; min-width:220px;"><div class="k">What we track</div><div class="v">Partners secured, not just introduced</div></div>
+      <div class="fact" style="flex:1; min-width:220px;"><div class="k">What we track</div><div class="v">Relationships that continued beyond one event</div></div>
+      <div class="fact" style="flex:1; min-width:220px;"><div class="k">What we track</div><div class="v">Value delivered beyond funding — access, media, credibility</div></div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-band">
+  <div class="wrap">
+    <h2>Want to be our next case study?</h2>
+    <a href="https://claude.ai/artifact/B56kUHtw138U3qqbHPDW7C" class="btn btn-primary">Tell Us What You're Building</a>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <div class="footer-logo">Orrba Hub<small>CREATE. CONNECT. BUILD.</small></div>
+        <p class="footer-desc">A premium partnerships and marketing consultancy helping conveners build the right corporate, media, community and institutional partnerships.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Site</h4>
+        <ul>
+          <li><a href="https://claude.ai/artifact/Ws7Uux1oEEPWQ8mQyppzMX">About</a></li>
+          <li><a href="https://claude.ai/artifact/1FmRYnzsEHaTuYbHWrJk1u">Services</a></li>
+          <li><a href="https://claude.ai/artifact/T1uARHLb6C7FvZmTHtdEGQ">Our Work</a></li>
+          <li><a href="https://claude.ai/artifact/8TwmXA7HKX1dcTz8YD33db">Insights</a></li>
+          <li><a href="https://claude.ai/artifact/B56kUHtw138U3qqbHPDW7C">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="https://claude.ai/artifact/1FmRYnzsEHaTuYbHWrJk1u">Corporate Event Sponsorship</a></li>
+          <li><a href="https://claude.ai/artifact/1FmRYnzsEHaTuYbHWrJk1u">Corporate &amp; Institutional Partnerships</a></li>
+          <li><a href="https://claude.ai/artifact/1FmRYnzsEHaTuYbHWrJk1u">Grant &amp; Funding Support</a></li>
+          <li><a href="https://claude.ai/artifact/1FmRYnzsEHaTuYbHWrJk1u">Partnership Strategy</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:orrbahub@gmail.com">orrbahub@gmail.com</a></li>
+          <li><a href="https://wa.me/2348077277867" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li><a href="https://instagram.com/Orrba_hub" target="_blank" rel="noopener">Instagram</a></li>
+          <li>Lagos, Nigeria</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Orrba Hub. All rights reserved.</p>
+      <p>Partnerships, Sponsorship &amp; Marketing Consultancy</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+// Mobile nav toggle
+document.addEventListener('DOMContentLoaded', function () {
+  var toggle = document.querySelector('.nav-toggle');
+  var links = document.querySelector('.nav-links');
+  if (toggle && links) {
+    toggle.addEventListener('click', function () {
+      var open = links.classList.contains('open');
+      links.classList.toggle('open');
+      links.style.cssText = open
+        ? ''
+        : 'position:absolute; top:64px; left:0; right:0; background:#fff; flex-direction:column; padding:24px 32px; border-bottom:1px solid #E1E7EF; display:flex; z-index:60;';
+    });
+  }
+
+  // Mark active nav link based on current page
+  var path = window.location.pathname.split('/').pop() || 'index.html';
+  document.querySelectorAll('.nav-links a').forEach(function (a) {
+    var href = a.getAttribute('href');
+    if (href === path || (path === '' && href === 'index.html')) {
+      a.classList.add('active');
+    }
+  });
+
+  // Contact form (no backend — preview only)
+  var form = document.getElementById('orrba-form');
+  if (form) {
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var success = document.getElementById('form-success');
+      if (success) success.classList.add('show');
+    });
+  }
+});
+
+</script>
+</body>
+</html>
